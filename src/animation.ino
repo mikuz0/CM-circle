@@ -23,6 +23,7 @@ void animation ()
     confetti();
     break;
   case 5:
+   HUE_START += (10*VUmetr() -HUE_START)*0.1;
  fireRoutine();
     break;
   default:

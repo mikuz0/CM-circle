@@ -55,7 +55,7 @@ int sample ;
 #define FIRE_SCALE 35   // масштаб огня
 #define HUE_GAP 60      // заброс по hue
 #define FIRE_STEP 15    // шаг изменения "языков" пламени
-#define HUE_START 5     // начальный цвет огня (0 красный, 80 зелёный, 140 молния, 190 розовый)
+
 #define HUE_COEF 0.7    // коэффициент цвета огня (чем больше - тем дальше заброс по цвету)
 #define SMOOTH_K 0.15   // коэффициент плавности огня
 #define MIN_BRIGHT 50   // мин. яркость огня
@@ -63,7 +63,7 @@ int sample ;
 #define MIN_SAT 180     // мин. насыщенность
 #define MAX_SAT 255     // макс. насыщенность
 
-
+byte HUE_START=5;     // начальный цвет огня (0 красный, 80 зелёный, 140 молния, 190 розовый)
 unsigned char matrixValue[8][16];
 unsigned char line[M_WIDTH];
 int pcnt = 0;
